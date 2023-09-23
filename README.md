@@ -18,12 +18,12 @@ cp -r zsh-local-ai ~/.oh-my-zsh/custom/plugins/
 
 #### Using oh-my-zsh edit ~/.zshrc
 
-Where plugins=() add zsh_local_ai to the list
+Where plugins=() add zsh-local-ai to the list
 Add a key binding to create_completion function
 
 ```bash
 ......
-plugins=(....... zsh_local_ai .......)
+plugins=(....... zsh-local-ai .......)
 
 bindkey '^X' create_completion
 ```
