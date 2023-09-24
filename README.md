@@ -4,12 +4,6 @@
 
 ### Install
 
-#### OpenAI
-
-```bash
-pip3 install openai
-```
-
 #### Install zsh_local_ai plugin
 
 ```bash
