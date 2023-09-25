@@ -15,6 +15,7 @@
       - [Reload zsh](#reload-zsh)
       - [Run local api in docker](#run-local-api-in-docker)
       - [Fetch the models](#fetch-the-models)
+    - [Restart the api](#restart-the-api)
     - [Make your first request](#make-your-first-request)
   - [Usage](#usage)
   - [License](#license)
@@ -70,10 +71,18 @@ make start
 
 #### Fetch the models
 
-This will take a while to download the models for the first time
+This will take a while to download the models for the first time. Wait until this is done before making a request.
 
 ```bash
 make get_models
+```
+
+### Restart the api
+
+Give it a few seconds to stop the container and start it again.
+
+```bash
+make restart
 ```
 
 ### Make your first request
