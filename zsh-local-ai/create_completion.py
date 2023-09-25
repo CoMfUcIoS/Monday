@@ -14,12 +14,14 @@ prompt_prefix = buffer[:cursor_position_char]
 prompt_suffix = buffer[cursor_position_char:]
 full_command = prompt_prefix + prompt_suffix
 messages = [{
-    "role":'system',
-    "content": "You are a zsh shell expert, please help me complete the following command. "
-               "You should only output the completed command, no need to include any other explanation."
+    "role": 'system',
+    "content": "You are a zsh shell expert, please help me complete"
+               " the following command. "
+               "You should only output the completed command, "
+               "no need to include any other explanation."
 },
-{
-    "role":'user',
+    {
+    "role": 'user',
     "content": full_command,
 }]
 messages = str(messages).replace("'", '"')
