@@ -5,10 +5,10 @@ install:
 	mkdir -p models
 
 start:
-	docker-compose up
+	docker compose up
 
 pull:
-	docker-compose pull
+	docker compose pull
 
 test:
 	curl $(LOCALAI)/v1/chat/completions -H "Content-Type: application/json" -d '{"model": "gpt4all-j", "messages": [{"role": "user", "content": "How are you?"}],"temperature": 0.1 }'
