@@ -2,7 +2,6 @@
 
 import subprocess
 import sys
-import time
 
 
 ai_url = 'http://localhost:8085/v1'
@@ -39,17 +38,7 @@ process = subprocess.Popen(
     shell=True,
 )
 
-spinner = ['-', '/', '|', '\\']
-i = 0
-while process.poll() is None:
-    sys.stdout.write('\r' + spinner[i % len(spinner)])
-    i += 1
-    time.sleep(0.1)
-
-
 stdout, stderr = process.communicate()
-
-sys.stdout.write('\r')
 
 # print the output
 if process.returncode == 0:
